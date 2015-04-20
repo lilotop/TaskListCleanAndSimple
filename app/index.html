@@ -8,8 +8,15 @@
 </head>
 <body ng-app = "tasklist">
 <div ng-controller="taskController">
-  <h2>{{name}}</h2>
+  <input type="text"  ng-model="newTask" ng-keyup="addTask()"/>
+  <div ng-repeat= "t in tasks">
+    <input type="checkbox" name="checkbox"/>
+    task: {{t}}
+
+  </div>
 </div>
+
+
 
 </body>
 </html>
