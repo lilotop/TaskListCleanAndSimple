@@ -7,8 +7,8 @@ angular.module("tasklist", [])
                 $scope.newTask = "";
             }
         }
-        $scope.deleteTask = function()
+        $scope.deleteTask = function(index)
         {
-
+            $scope.tasks.splice(index, 1);
         }
     })

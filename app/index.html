@@ -5,6 +5,7 @@
   <link rel="stylesheet" href="app.css">
   <script type="text/javascript" src="bower_components/angular/angular.js"></script>
   <script type="text/javascript" src="controllers.js"></script>
+ <h2>Welcome to CleanAndSimple Tasks List, press enter to add a Task</h2>
 </head>
 <body ng-app = "tasklist">
 <div ng-controller="taskController">
@@ -12,7 +13,7 @@
   <div ng-repeat= "t in tasks">
     <input type="checkbox" name="checkbox"/>
     task: {{t}}
-
+    <button ng-click="deleteTask(tasks.indexOf(t))">Delete</button>
   </div>
 </div>
 
