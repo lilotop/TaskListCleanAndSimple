@@ -3,6 +3,7 @@ logs/*
 node_modules/
 bower_components/
 tmp
+.idea
 .DS_Store
 .ideatarget/
 pom.xml.tag
