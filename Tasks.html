@@ -1,0 +1,53 @@
+                                          <!--********************************************-->
+		                                  <!--** Semenar Project By:Clean & Simple Team **-->
+                                          <!--** Clean & Simple Team:  OR, Shay & Areen **-->
+	                                      <!--********************************************-->
+<!DOCTYPE html>                                                  
+<html>
+<p1>Simple & Clean Team<p1>
+<br>
+<p1>By: OR, Shay & Areen<p1>
+<hr>
+     <head>
+        <title>Tasks Page</title>
+     </head>
+	                                                                           <!--Connect to CSS file  -->
+																			   <!--herf: the locathin of the file.css  -->
+	 <link rel="stylesheet" type="text/css" href="C:\Users\arin\Desktop\mystyles.css" media="screen" />
+   
+     <fieldset id="f1">      <!-- GroupBox-->
+	      <body>
+              <h1>Tasks</h1>
+     
+                    Add new task:
+				   <input type="text" name="task" id="myTask">                  <!-- textBox for input (task) from the user-->
+				   <button onclick="AddTaskFunction()">Add task</button>        <!-- button with click envent-->
+				   <br>                                                         <!-- new Line-->
+				   <fieldset id="f2">
+				   <legend>Tasks List</legend>
+				        <ol id="myList"> <ol>                              <!-- List-->
+	     </body>              
+      </fieldset >
+</html> 
+
+<script>
+function AddTaskFunction() 
+{
+var hr;
+   var ol = document.getElementById("myList");
+   var li = document.createElement("li");
+   var x = document.getElementById("myTask").value;
+   if(x=="")
+     {
+	 alert('Hello,\n there is no task to do ');
+	 }
+	 else
+	 {
+	 li.appendChild(document.createTextNode(x));
+   	 ol.appendChild(li);
+
+	 document.getElementById("myTask").value="";
+	 }
+  
+}
+</script>
