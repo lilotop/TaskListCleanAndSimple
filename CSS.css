@@ -1,0 +1,43 @@
+body {
+     background-color: #CCCCFF;
+	     }
+
+fieldset#f1
+              { 
+         width: 600px;
+		 height:500px;
+         margin:auto;
+         margin-top: 20px;
+         border-width:10px;
+         border-style: inset;
+         background-color:#FFFFCC;
+         max-width:500px;
+         padding:16px;
+		 border-color:#CC6600;
+	    }  
+
+ 
+fieldset#f2
+               {  
+		 background-color:#FFFFCC;
+		 height:350px;
+		 width:500px;
+         max-width:500px;
+         max-height:350px;
+         padding:16px;	
+        }
+		
+legend 
+         {
+      color: #FFF;
+      background: #000;
+      font-size: 1em;
+      padding: 5px;
+     }
+	ol
+	 {
+	 max-width:500;
+	 max-height:340;
+	 
+	 
+	 }
