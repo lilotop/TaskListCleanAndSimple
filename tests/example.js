@@ -13,15 +13,22 @@
 describe('taskListApp controllers', function() {
 
     describe('taskController', function() {
-        var scope;//, ctrl;
-        beforeEach(inject(function($rootScope, $controller) {
-            scope = $rootScope.$new();
-           // ctrl = $controller('taskController', {$scope: scope})
-        }));
+        var scope, ctrl;
+        beforeEach(
+			function(){
+				module('tasklist', function () {});
+				inject(function($rootScope, $controller) {
+				
+
+					scope = $rootScope.$new();
+					ctrl = $controller('taskController', {$scope: scope})
+				})
+			}
+		);
 
     describe('Managing Lists', function () {
         it('should not have a new List on start', function () {
-            expect(scope.tasks.size()).toBe(0);
+            expect(scope.tasks.length).toBe(0);
         });
 
         //    it('should have default List on start', function () {
